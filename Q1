@@ -1,0 +1,39 @@
+HTTP/1.1 vs HTTP/2: What's the Difference?
+
+HTTP (Hypertext Transfer Protocol) is the underlying protocol that powers the web. It is a way for clients (web browsers) to request resources from servers (web hosts). 
+HTTP/1.1 is the most widely used version of HTTP, but it has some limitations that can impact performance. HTTP/2 is a newer version of HTTP that addresses these limitations 
+and offers significant performance improvements.
+
+Here are some of the key differences between HTTP/1.1 and HTTP/2:
+
+Multiplexing: 
+
+HTTP/1.1 can only send one request at a time per TCP connection. This means that if a web page loads multiple resources, each resource will have to wait for the previous
+resource to finish before it can start downloading. HTTP/2, on the other hand, can send multiple requests at the same time over a single TCP connection. This eliminates the need for resources 
+to wait for each other, which can significantly improve performance.
+
+Header compression: 
+
+HTTP/1.1 headers are sent in plain text, which can add unnecessary overhead. HTTP/2 uses a more efficient header compression algorithm, which can reduce the size of headers by up to 70%. 
+This can also improve performance by reducing the amount of data that needs to be transferred.
+
+Server push:
+
+HTTP/1.1 requires clients to explicitly request resources from servers. HTTP/2, on the other hand, allows servers to push resources to clients. This can improve performance by reducing the 
+number of round trips that need to be made between clients and servers.
+In general, HTTP/2 offers significant performance improvements over HTTP/1.1. However, not all web servers and browsers support HTTP/2 yet.
+
+Here are some of the benefits of using HTTP/2:
+
+Faster page load times: 
+
+HTTP/2 can significantly reduce page load times by reducing the number of round trips that need to be made between clients and servers.
+Improved performance for streaming media: HTTP/2 is well-suited for streaming media, such as video and audio. This is because HTTP/2 can efficiently multiplex multiple streams of data 
+over a single TCP connection.
+
+Reduced bandwidth usage: 
+
+HTTP/2 can reduce bandwidth usage by compressing headers and eliminating the need for multiple round trips.
+If you are looking to improve the performance of your website, you should consider using HTTP/2. However, it is important to check that your web server and browser support HTTP/2 
+before you make the switch.
+
